@@ -1,4 +1,4 @@
-import { ComponentStory, Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { ListItem } from './ListItem';
 
@@ -22,19 +22,4 @@ export const Unchecked: Story = {
     label: 'Unchecked',
   },
   render: ({ isChecked, label }) => <ListItem isChecked={isChecked} label={label} />
-};
-
-// CSF2
-const Template: ComponentStory<typeof ListItem> = (args) => <ListItem {...args} />;
-
-export const CheckedCSF2 = Template.bind({});
-CheckedCSF2.args = {
-  isChecked: true,
-  label: 'Checked',
-};
-
-export const UncheckedCSF2 = Template.bind({});
-CheckedCSF2.args = {
-  isChecked: false,
-  label: 'Unchecked',
 };
