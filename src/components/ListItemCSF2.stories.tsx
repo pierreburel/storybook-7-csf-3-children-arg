@@ -1,4 +1,4 @@
-import { ComponentStory, Meta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { ListItem } from './ListItem';
 
@@ -6,7 +6,7 @@ const meta: Meta<typeof ListItem> = { component: ListItem };
 
 export default meta;
 
-const Template: ComponentStory<typeof ListItem> = (args) => <ListItem {...args} />;
+const Template: StoryFn<typeof ListItem> = (args) => <ListItem {...args} />;
 
 export const Checked = Template.bind({});
 

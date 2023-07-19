@@ -13,7 +13,7 @@ export const Empty: Story = {};
 export const Args: Story = {
   args: {
     children: <Checked {...Checked.args} />,
-    count: 2,
+    count: 1,
   },
 };
 
